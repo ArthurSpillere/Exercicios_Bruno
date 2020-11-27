@@ -75,13 +75,15 @@ def main():
                     f"{qm[3]} {qm[4]} {qm[5]}\n"
                     f"{qm[6]} {qm[7]} {qm[8]}")
 
-
 if __name__ == "__main__":
     while True:
         main()
         
+        # não entendi muito bem a funcionalidade de usar novamente considerado que os números são os mesmos
         resposta = input("\nDeseja usar novamente? [S/N]\n"
                             "")[0].upper().strip()
+
+        # Joguei novamente e o código "trava" no quadrado nº 6 e inicia novamente do 1
 
         if resposta in "SN" and resposta != " " and resposta != "":
             if resposta == "S":

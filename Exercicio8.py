@@ -150,6 +150,7 @@ def main():
     limpar_tela()
     print("As cartas na sua mão são:\n")
     deck = Baralho()
+    #uso do choices que nós não aprendemos em sala
     cartas_na_mao = choices(deck.baralho, k=5)
     
     for carta in cartas_na_mao:

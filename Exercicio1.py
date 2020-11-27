@@ -50,6 +50,8 @@ def main():
                        - contribuicao_imp_renda
                        - contribuicao_inss
                        - contribuicao_sindicato)
+
+    # dessa forma fica muito bom visualmente
     limpar_tela()
     print("Calculando descontos! Aguarde...")
     sleep(2)
@@ -58,6 +60,7 @@ def main():
     print("="*60)
     print(f"{msg:^50}")
     print("="*60)
+    # talvez usar um \t deixe mais claro a ideia da margem
     print(f"\n{'':^10}+ Salário Bruto: R${salario_bruto:<40}")
     print(f"{'':^10}- IR {int(taxa_imp_renda*100)}%: "
           f"R${contribuicao_imp_renda:<40}")

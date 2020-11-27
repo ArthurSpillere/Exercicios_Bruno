@@ -34,7 +34,7 @@ def main():
     print(f"Foram lançados {i+1} dados. Resultado:\n")
     
     for contador in range(1,7):
-        
+        #uso do count como contador, que nós ainda não aprendemos em sala
         print(f"Foram lançados {lista_jogadas.count(contador)}"
               f" dados com a face {contador}")           
     

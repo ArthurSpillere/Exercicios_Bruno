@@ -42,7 +42,7 @@ def main():
     print()
     print("="*60)
     
-    
+    # acabei rodando o programa sem frase sem querer e ele contou várias letras
 if __name__ == "__main__":
     while True:
         main()
