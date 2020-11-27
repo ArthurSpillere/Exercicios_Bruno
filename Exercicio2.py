@@ -21,6 +21,7 @@ def limpar_tela():
 def main():
     from time import sleep
     
+    # uso do round que nós não vimos em aula para arredondar
     cobertura_tinta = round(1/6, 10)
     margem_erro = 1.10
     valor_18 = 80
@@ -39,6 +40,7 @@ def main():
     sleep(2)
     limpar_tela()
     total_litros = area_pintar * cobertura_tinta
+    # arredondar o número de casas decimais
     print(total_litros)
     total_latas18 = int((total_litros * margem_erro)// 18)
     total_latas3_6 = int((total_litros * margem_erro) // 3.6)
@@ -61,6 +63,7 @@ def main():
     print("="*60)
     print(f"{msg:^50}")
     print("="*60)
+    # não compreendi muito bem a usabilidade do '<2'
     print(f"\n{'':^10}Latas de 18L: {total_latas18:<2} - R${valor_18 * total_latas18}")
     print(f"{'':^10}Latas de 3,6L: {total_latas3_6:<2} - R${valor_3_6 * total_latas3_6}")
     print(f"\n{'':^10}Otimizado: {latas_18_otimizado:<2} latas de 18L")

@@ -40,6 +40,7 @@ def main():
     if len(primos) == 0:
         print("Não há primos entre esses números!\n")
     else:
+        #uso do enumerate, que nós ainda não vimos em aula
         for pos, resultado in enumerate(primos):
             if pos == len(primos)-1:
                 print(f"{resultado} - FIM\n")
